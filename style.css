@@ -446,6 +446,13 @@ body {
     height: 40px;
     width: auto;
     object-fit: contain;
+    max-width: 200px;
+}
+
+@media (max-width: 768px) {
+    .mobile-logo {
+        max-width: 120px;
+    }
 }
 
 .event-or {
