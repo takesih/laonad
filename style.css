@@ -359,3 +359,59 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* 링크 섹션 스타일링 */
+.links {
+    background-color: var(--dark);
+}
+
+.links h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.link-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.link-box:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.link-content a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem;
+}
+
+.link-content h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.link-content a:hover h3 {
+    color: var(--accent);
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .link-box {
+        padding: 1.5rem;
+    }
+    
+    .link-content h3 {
+        font-size: 1.3rem;
+    }
+}
