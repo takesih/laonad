@@ -1,0 +1,211 @@
+:root {
+    --primary: #2C3E50;
+    --accent: #E74C3C;
+    --light: #ECF0F1;
+    --dark: #2C3E50;
+}
+
+/* 전체 타이포그래피 개선 */
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+}
+
+/* 히어로 섹션 개선 */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(44, 62, 80, 0.8), 
+        rgba(44, 62, 80, 0.8)
+    ), url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    height: 5.5rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.typed-text {
+    font-size: 1.8rem;
+    font-weight: 300;
+    min-height: 2.5rem;
+    display: block;
+}
+
+/* Typed.js 커서 숨기기 */
+.typed-cursor {
+    display: none;
+}
+
+/* 특징 박스 디자인 개선 */
+.feature-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    padding: 2.5rem;
+}
+
+.feature-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(231, 76, 60, 0.1);
+}
+
+.feature-box h3 {
+    color: var(--primary);
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+/* 이용방법 섹션 새로운 스타일 */
+.how-to {
+    background-color: var(--light);
+}
+
+.how-to h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 3rem;
+}
+
+.col-lg-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.step-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.15);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--accent);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.step-card h4 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 992px) {
+    .col-lg-2-4 {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-lg-2-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-2-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* 위치 섹션 개선 */
+.location {
+    background: var(--primary);
+    padding: 5rem 0;
+}
+
+.location h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* 반응형 디자인 개선 */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+        height: 4rem;
+    }
+    
+    .typed-text {
+        font-size: 1.4rem;
+        min-height: 2rem;
+    }
+}
+
+/* 추가 스타일링 */
+.hero-logo {
+    width: auto;
+    height: 80px;
+    margin-bottom: 2rem;
+}
+
+/* 모바일 반응형 로고 크기 조정 */
+@media (max-width: 768px) {
+    .hero-logo {
+        height: 60px;
+    }
+}
+
+/* 스크롤 다운 아이콘 스타일링 */
+.scroll-down {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
+
+/* 모바일 반응형 조정 */
+@media (max-width: 768px) {
+    .scroll-down {
+        bottom: 20px;
+    }
+    .scroll-down svg {
+        width: 30px;
+        height: 30px;
+    }
+}
