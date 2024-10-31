@@ -12,102 +12,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 메인 섹션 -->
-    <section class="hero d-flex align-items-center justify-content-center">
-        <div class="container text-center">
-            <img src="logo.png" alt="라온빌리어즈 로고" class="hero-logo mb-4" data-aos="fade-down" data-aos-duration="1000">
-            <h1 class="display-1 mb-4 text-white gasoek-font" data-aos="fade-up" data-aos-duration="1000">라온빌리어즈</h1>
-            <div class="typed-text mb-4 text-white fixed-height" data-aos="fade-up" data-aos-delay="400"></div>
-            <div class="scroll-down">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 5v14M5 12l7 7 7-7"/>
-                </svg>
+    <!-- 로딩 화면 추가 -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- 기존 콘텐츠를 div로 감싸기 -->
+    <div class="content" style="display: none;">
+        <!-- 메인 섹션 -->
+        <section class="hero d-flex align-items-center justify-content-center">
+            <div class="container text-center">
+                <img src="logo.png" alt="라온빌리어즈 로고" class="hero-logo mb-4" data-aos="fade-down" data-aos-duration="1000">
+                <h1 class="display-1 mb-4 text-white gasoek-font" data-aos="fade-up" data-aos-duration="1000">라온빌리어즈</h1>
+                <div class="typed-text mb-4 text-white fixed-height" data-aos="fade-up" data-aos-delay="400"></div>
+                <div class="scroll-down">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 특징 섹션 -->
-    <section class="features py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">특별한 라온빌리어즈</h2>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="feature-box text-center">
-                        <div class="feature-content">
-                            <h3>대대 4대 중대 4대</h3>
-                            <p>넓은 다이간격으로 쾌적하게 즐기는<br>프리미엄 당구 공간</p>
+        <!-- 특징 섹션 -->
+        <section class="features py-5">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="fade-up">특별한 라온빌리어즈</h2>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="feature-box text-center">
+                            <div class="feature-content">
+                                <h3>대대 4대 중대 4대</h3>
+                                <p>넓은 다이간격으로 쾌적하게 즐기는<br>프리미엄 당구 공간</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-box text-center">
+                            <div class="feature-content">
+                                <h3>24시간 연중무휴</h3>
+                                <p>언제든 방문하세요<br>항상 열려있습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-box text-center">
+                            <div class="feature-content">
+                                <h3>여성들도 편하게!</h3>
+                                <p>금연 시설로 운영되는<br>쾌적한 프리미엄 공간</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-box text-center">
-                        <div class="feature-content">
-                            <h3>24시간 연중무휴</h3>
-                            <p>언제든 방문하세요<br>항상 열려있습니다</p>
+            </div>
+        </section>
+
+        <!-- 이용방법 섹션 -->
+        <section class="how-to py-5">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="fade-up">이용방법</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h4>키오스크에서<br>다이잡고!</h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-box text-center">
-                        <div class="feature-content">
-                            <h3>여성들도 편하게!</h3>
-                            <p>금연 시설로 운영되는<br>쾌적한 프리미엄 공간</p>
+                    <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h4>장갑 및 당구공<br>챙겨서 다이로!</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h4>다이에서 게임 설정 후<br>게임치고!</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <h4>다이 및 주변<br>정리 하고!</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="step-card">
+                            <div class="step-number">5</div>
+                            <h4>키오스크에서<br>결제!</h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 이용방법 섹션 -->
-    <section class="how-to py-5">
-        <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">이용방법</h2>
-            <div class="row g-4">
-                <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="step-card">
-                        <div class="step-number">1</div>
-                        <h4>키오스크에서<br>다이잡고!</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="step-card">
-                        <div class="step-number">2</div>
-                        <h4>장갑 및 당구공<br>챙겨서 다이로!</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="step-card">
-                        <div class="step-number">3</div>
-                        <h4>다이에서 게임 설정 후<br>게임치고!</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="step-card">
-                        <div class="step-number">4</div>
-                        <h4>다이 및 주변<br>정리 하고!</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="step-card">
-                        <div class="step-number">5</div>
-                        <h4>키오스크에서<br>결제!</h4>
-                    </div>
-                </div>
+        <!-- 위치 섹션 -->
+        <section class="location py-5 bg-dark text-white">
+            <div class="container text-center">
+                <h2 data-aos="fade-up">찾아오시는 길</h2>
+                <p data-aos="fade-up" data-aos-delay="200">
+                    춘천시 칠전동<br>
+                    네비게이션: 칠전서길8
+                </p>
             </div>
-        </div>
-    </section>
-
-    <!-- 위치 섹션 -->
-    <section class="location py-5 bg-dark text-white">
-        <div class="container text-center">
-            <h2 data-aos="fade-up">찾아오시는 길</h2>
-            <p data-aos="fade-up" data-aos-delay="200">
-                춘천시 칠전동<br>
-                네비게이션: 칠전서길8
-            </p>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
