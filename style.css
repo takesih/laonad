@@ -415,3 +415,108 @@ body {
         font-size: 1.3rem;
     }
 }
+
+.event-box {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.event-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.event-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.event-or {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.event-content h3 {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.event-conditions {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.event-conditions h4 {
+    color: var(--accent);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.event-conditions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.event-conditions li {
+    color: #555;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.event-conditions li:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: var(--accent);
+    margin: 0.5rem auto;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .event-box {
+        padding: 1.5rem;
+    }
+    
+    .event-logo {
+        height: 30px;
+    }
+    
+    .event-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .event-conditions {
+        padding: 1.5rem;
+    }
+}
+.event-content p {
+    color: #666;
+    margin-bottom: 0;
+}
