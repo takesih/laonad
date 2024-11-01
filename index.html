@@ -164,6 +164,58 @@
             </div>
         </section>
 
+        <!-- 갤러리 섹션 -->
+        <section class="gallery py-5">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="fade-up">갤러리</h2>
+                <div class="row g-4">
+                    <!-- 갤러리 이미지들 -->
+                    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="gallery-item" onclick="openModal('gall/01.jpg')">
+                            <img src="gall/01.jpg" alt="갤러리 이미지 1" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="gallery-item" onclick="openModal('gall/02.jpg')">
+                            <img src="gall/02.jpg" alt="갤러리 이미지 2" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="gallery-item" onclick="openModal('gall/03.jpg')">
+                            <img src="gall/03.jpg" alt="갤러리 이미지 3" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="gallery-item" onclick="openModal('gall/04.jpg')">
+                            <img src="gall/04.jpg" alt="갤러리 이미지 4" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="gallery-item" onclick="openModal('gall/05.jpg')">
+                            <img src="gall/05.jpg" alt="갤러리 이미지 5" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="gallery-item" onclick="openModal('gall/06.jpg')">
+                            <img src="gall/06.jpg" alt="갤러리 이미지 6" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="gallery-item" onclick="openModal('gall/07.jpg')">
+                            <img src="gall/07.jpg" alt="갤러리 이미지 7" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- 나머지 이미지들도 같은 형식으로 반복 (02~07) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 모달 추가 -->
+        <div class="modal-gallery">
+            <span class="modal-close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+
         <!-- 위치 섹션을 링크 섹션으로 변경 -->
         <section class="links py-5 bg-dark text-white">
             <div class="container">

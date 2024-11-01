@@ -1,3 +1,11 @@
+// openModal 함수를 전역 스코프로 이동
+function openModal(imgSrc) {
+    const modal = document.querySelector('.modal-gallery');
+    const modalImg = document.getElementById('modalImg');
+    modal.style.display = 'block';
+    modalImg.src = imgSrc;
+}
+
 // 페이지 로딩 완료 시 실행될 코드
 window.addEventListener('load', () => {
     // 최소 1.5초 동안 로딩 화면 표시
@@ -33,5 +41,18 @@ window.addEventListener('load', () => {
     document.querySelector('.scroll-down').addEventListener('click', () => {
         const featuresSection = document.querySelector('.features');
         featuresSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // 모달 닫기 이벤트
+    document.querySelector('.modal-close').addEventListener('click', () => {
+        document.querySelector('.modal-gallery').style.display = 'none';
+    });
+
+    // 모달 바깥 클릭시 닫기
+    window.addEventListener('click', (e) => {
+        const modal = document.querySelector('.modal-gallery');
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
     });
 }); 
